@@ -1,0 +1,29 @@
+.skills {
+  display: flex;
+  flex-direction: column;
+  &__items {
+    padding-bottom: .5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    > * {
+      background-color: #374956;
+      border-radius: 5px;
+      padding: 3px 10px;
+      margin:  3px;
+      transition:  all .4s ease-in-out;
+      &:hover {
+        cursor: pointer;
+        transform: translateY(-1px);
+      }
+    }
+  }
+  &>* {
+    width: 98%;
+  }
+}
+
+.selected {
+  background: lightseagreen;
+}

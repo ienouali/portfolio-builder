@@ -1,0 +1,32 @@
+.bloc__data {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background-color: rgba(122, 139, 145, 0.2);
+  box-shadow: 1px 3px 5px rgba(17, 17, 17, 0.2);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  &--dates {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+  }
+  &--field {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+  }
+  &--btns {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

@@ -1,0 +1,104 @@
+@import "../../assets/sass/variables";
+
+
+.button-wrapper {
+  position: relative;
+  width: 150px;
+  text-align: center;
+  margin: 20% auto;
+  .label  {
+    border: none;
+    border-radius: 3px;
+    position: relative;
+    z-index: 0;
+    display: inline-block;
+    width: 100%;
+    background: rgb(118, 124, 124);
+    cursor: pointer;
+    color: $color-grey-medium;
+    padding: 10px 0;
+    font-size:1.3rem;
+    :hover {
+      cursor: pointer;
+    }
+  }
+  #upload {
+    display: inline-block;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 50px;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    cursor: pointer;
+  }
+}
+
+.form {
+  height: 100%;
+  h3 {
+    margin: 1rem 0;
+    font-weight: 400;
+    color: $color-grey-light;
+  }
+
+  width: 80rem;
+  min-width: 50rem;
+  font-family: $font-roboto;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+
+  &__personal--info {
+    padding: 1rem;
+   /* background-color: rgba(122, 139, 145, 0.2);*/
+    box-shadow: 1px 3px 5px rgba(17, 17, 17, 0.2);
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+      &__picture {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+          img {
+            opacity: .7;
+            width: 16rem;
+            height: auto;
+          }
+      }
+
+      &__fields {
+        width: 60%;
+      }
+  }
+}
+
+
+.bloc--action {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .icon-add {
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.contact_bloc {
+  width: 100%;
+display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+
+  &--one , &--two {
+     width:49%;
+   }
+}
+
+
+

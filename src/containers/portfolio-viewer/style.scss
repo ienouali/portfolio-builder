@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+@import "../../assets/sass/variables";
+
+.portfolio {
+  width: 50%;
+  margin: 0 auto;
+  height: 100%;
+  min-width: 60rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  font-family: $font-roboto;
+  .model {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    &>:last-child {
+      border: none;
+      font-size: 1.9rem;
+      padding: 1rem 2rem;
+      border-radius: 2px;
+      justify-self: center;
+      align-self: center;
+      margin-left: auto;
+      width: auto;
+      &:active, &:focus {
+        outline: none;
+      }
+    }
+  }
+  &__viewer {
+    overflow: auto;
+    width: 75%;
+    min-width: 750px;
+    font-family: 'Noto Sans', sans-serif !important;
+    font-weight: 500;
+    box-shadow: 1px 3px 5px rgba(17, 17, 17, 0.2);
+    height: 100%;
+    background-color: white;
+    display: flex;
+      .about {
+        text-align: justify ;
+      }
+    .model__sidebar {
+      background-color: #1d2930;
+      padding: 3rem;
+      height: 100%;
+      font-family: inherit;
+      font-weight: normal;
+      width: 40%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: start;
+        .title   {
+          margin-top: 2rem;
+          &__img  {
+            img {
+              width: 13rem;
+              height: 13rem;
+              border-radius: 50%;
+            }
+          }
+          h1 {
+            font-size: 2.2rem;
+            text-transform: capitalize;
+          }
+          span {
+            font-size: 1.5rem;
+            text-transform: capitalize;
+          }
+        }
+
+      .contact {
+        margin-top: 2rem;
+        &__list   {
+          margin-top: 1rem;
+          align-self: start;
+          li {
+            padding: .5rem 0;
+            font-size: 1.4rem;
+            i {margin-right: 1rem}
+          }
+        }
+
+      }
+    }
+    .model__content {
+      background-color: white;
+      padding: 4rem;
+      display: flex;
+      justify-content: start;
+      color: #5b5b5b;
+      width: 60%;
+      height: 100%;
+      flex-direction: column;
+      &--about {
+        margin-bottom: 2.5rem;
+      }
+        &--experience {
+          margin-bottom: 2.5rem;
+        }
+       .skills--items{
+          display: flex;
+         justify-content: space-between;
+         align-items: start;
+         flex-wrap: wrap;
+         > * {
+           margin: 1rem;
+         }
+        }
+    }
+  }
+}
+
+
+h4 {
+  margin-bottom: 1rem;
+}
+
+ul {
+  list-style: none;
+  text-decoration: none;
+}

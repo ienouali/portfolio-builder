@@ -1,0 +1,56 @@
+@import "../../assets/sass/variables";
+
+.nav {
+  padding-left: 6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: #1d2930;
+  height: 5%;
+  box-shadow: 1px 7px 9px rgba(0, 0, 0, 0.2);
+  color: $color-grey-medium;
+  &__ul--left{
+    width: 50rem;
+    &__items {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      flex-wrap: wrap;
+      > a:first-child {
+        color: $color-grey-medium;
+        font-family: $font-secondary;
+        font-weight: 900;
+        font-size: 1.7rem;
+        font-style: italic;
+      }
+      & > * {
+        min-width: 12rem;
+        width: 12rem;
+      }
+    }
+  }
+
+  &__ul--right{
+    &__items {
+      &>* {
+        color: $color-grey-medium;
+        font-family: $font-primary;
+        margin-right: 5rem;
+      }
+
+    }
+  }
+  li {
+    list-style: none;
+    transition: all .3s ease-out;
+    &:hover {
+      cursor: pointer;
+      color: $color-grey-light;
+      transform: translateY(-1px);
+    }
+    &:active, &:focus {
+      outline: none;
+    }
+  }
+}

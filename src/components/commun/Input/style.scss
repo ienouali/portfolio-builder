@@ -1,0 +1,42 @@
+@import "../../../assets/sass/variables";
+
+
+.form__group {
+  margin-bottom: 1.5rem;
+  width: 100%;
+  .textarea {
+    height: 12rem;
+  }
+  &--label {
+    font-family: $font-roboto;
+    font-weight: 400;
+    color: $color-grey-medium;
+    display: block;
+  }
+  &--control {
+    margin-top: .5rem;
+    font-size: 1.7rem;
+    font-weight: 400;
+    width: 100%;
+    height: 4rem;
+    border: none;
+    border-radius: 2px;
+    padding: 1rem;
+    background-color: $color-grey-medium;
+    box-shadow: 1px 3px 5px rgba(0,0,0,.2);
+    transition: all .4s linear;
+    &::placeholder {
+      color: #8d8d8d;
+      font-size: 1.3rem;
+      text-transform: capitalize;
+    }
+    &:focus {
+      background-color: $color-grey-light;
+      outline: none;
+    }
+  }
+}
+
+.custom-with {
+  width: 75% !important;
+}

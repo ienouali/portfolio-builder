@@ -1,0 +1,45 @@
+@import "../../../assets/sass/variables";
+
+.button {
+  border: none;
+  padding: 1.5rem 2rem;
+  border-radius: 3px;
+  font-size: 1.7rem;
+  font-weight: 900;
+  font-family: $font-primary;
+  box-shadow: 1px 7px 12px rgba(0,0,0,.3);
+  transition: all .4s linear;
+  text-transform: capitalize;
+  &:focus {
+    outline: none;
+  }
+  &:hover {
+    cursor: pointer;
+    transform: translateY(-1px);
+  }
+}
+
+.btn-big {
+  font-size: 1.7rem;
+  font-weight: 900;
+  padding: 1.5rem 2rem;
+  margin-top: 5rem;
+}
+.btn-medium {
+  font-family: $font-roboto;
+  color: #343b40;
+  margin-top: 1rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+  padding: 1rem 2rem;
+}
+
+.btn-small {
+  font-size: 1.2rem;
+  font-weight: 400;
+  padding: .8rem 1rem;
+}
+
+.align-start {
+  align-self: start !important;
+}

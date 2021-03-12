@@ -1,0 +1,35 @@
+@import "../../assets/sass/variables";
+
+
+.admin {
+  font-family: $font-roboto;
+  font-weight: normal;
+  width: 75%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  .list__title {
+    padding: 1rem;
+    align-self: start;
+    width: 100%;
+  }
+  table {
+    padding: 2rem;
+    margin-top: 1rem;
+    width: 100%;
+
+    tr td {
+      text-align: center;
+      border-bottom: 1px solid #6b6b6b;
+      padding: 3rem;
+
+    }
+  }
+}
+.picture img {
+  border-radius: 50%;
+  height: 10rem;
+  width: 10rem;
+}

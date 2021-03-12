@@ -1,0 +1,8 @@
+
+export const USERS = {
+    LOAD: 'LOAD_USERS',
+    LOAD_SUCCESS: 'LOAD_USERS_SUCCESS',
+    LOAD_FAIL: 'LOAD_USERS_FAIL'
+};
+
+
