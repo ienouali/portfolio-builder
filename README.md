@@ -2,7 +2,7 @@
 ## small app built using react hooks
 ### this app make you built your own resume and download it as a format PDF
 
-#usage :
+# usage :
 
 $ npm start 
 $ npm run server 
